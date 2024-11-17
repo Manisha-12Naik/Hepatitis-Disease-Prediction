@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Document</title>
+</head>
+<style>
+    body{margin: 0;
+        padding: 0;
+    background: url(https://torange.biz/photofxnew/209/HD/mirror-blur-left-side-209993.jpg) no-repeat;
+    height: 100vh;
+    font-family: sans-serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden
+    }
+    @media screen and (max-width: 600px)
+    {
+        body{
+            background-size: cover; 
+            
+        }
+        #particles-js{height: 100%}}
+    .loginBox{position: absolute;
+            top: 56%;
+            left: 69%;
+            transform: translate(-50%,-50%);
+            width: 350px;
+            min-height: 200px;
+            background: transparent;
+            border-radius: 10px;
+            border-radius: 25px;
+            padding: 40px;
+            box-sizing: border-box
+        }
+    .user{
+            margin: 0 auto;
+            display: block;
+            margin-bottom: 20px
+        }
+        h3{margin: 0;
+            padding: 0 0 20px;
+            color: #59238F;
+            text-align: center
+        }
+    .loginBox input{width: 100%;margin-bottom: 20px}
+    .loginBox input[type="text"], 
+    .loginBox input[type="password"],
+    .loginBox input[type="passe"],
+    .loginBox input[type="Email"]{border: none;
+        border-bottom: 2px solid #262626;
+    outline: none;height: 40px;
+    color: #141414;
+    background: transparent;
+    font-size: 16px;
+    padding-left: 20px;
+    box-sizing: border-box}
+    .loginBox input[type="text"]:hover,
+     .loginBox input[type="password"]:hover,
+     .loginBox input[type="passe"]:hover,
+     .loginBox input[type="Email"]:hover{color: #0b0c0c;
+     border: 1px solid #42F3FA;
+     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3), 0 0 10px rgba(0,255,0,.2), 0 0 15px rgba(0,255,0,.1), 0 2px 0 black}
+     .loginBox input[type="text"]:focus, 
+     .loginBox input[type="password"]:focus,
+     .loginBox input[type="passe"]:focus,
+     .loginBox input[type="Email"]:focus{border-bottom: 2px solid #050505}
+     .inputBox{position: relative}
+     .inputBox span{position: absolute;
+     top: 10px;color: #262626}
+     .loginBox input[type="submit"]{border: none;outline: none;height: 40px;font-size: 16px;background: #59238F;color: #fff;border-radius: 20px;cursor: pointer}
+     .loginBox a{color: #262626;font-size: 14px;font-weight: bold;text-decoration: none;text-align: center;display: block}a:hover{color: #00ffff}p{color: #0000ff}
+</style>
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>                        
+            </button>
+            <a class="navbar-brand" href="#">My Website</a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="home"><span class="glyphicon glyphicon-home"></span>Home</a></li>
+              <li class=""><a href="about"><span class="glyphicon glyphicon-search"></span>About</a></li>
+              <li><a href="contact"><span class="glyphicon glyphicon-earphone"></span>Contact</a></li>
+              <li><a href="form"><span class="glyphicon glyphicon-book"></span>Form</a></li>
+
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+               
+              <li><a href="login"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>      
+            </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+    <div class="loginBox"> <img class="user" src="https://i.ibb.co/yVGxFPR/2.png" height="100px" width="100px">
+        <h3>Sign in here</h3>
+        <form  method="post">
+          {% csrf_token %}
+            <div class="inputBox">
+                 <font color="black"><input id="uname" type="text" name="Username" placeholder="Username"></font> 
+                 <font color="black"><input id="pass" type="password" name="Password" placeholder="Password"></font>
+                 <font color="black"><input id="pass1" type="password" name="passe" placeholder="Confirm Password"></font>
+                 <font color="black"><input id="email" type="Email" name="EmailID" placeholder="Email"> </font>
+                </div> <a href="login" ><input type="submit" name="" value="submit"></a>
+        </form> 
+       
+        </div>
+        
+    </div>
+    {% for i in message %}
+    <script>alert("{{i}}")</script>
+    {% endfor %}
+</body>
+</html>

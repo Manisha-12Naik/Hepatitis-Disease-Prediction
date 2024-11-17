@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Document</title>
+    <style>
+         body{margin: 0;
+        
+    background: url(https://cdn.vectorstock.com/i/1000v/74/49/background-template-design-with-happy-doctor-vector-29987449.jpg) no-repeat;
+   
+    font-family: sans-serif;
+    text-align: right;
+    background-repeat: no-repeat;
+    background-position: center;
+  
+    }
+    .last {
+    margin-top: 1910px;
+    width: 1000px;
+    }
+    .one{
+      margin-left: 250px;
+    }
+    h6{
+      margin-left: 42px;
+      
+    }
+    .three{
+      margin-left: 65px;
+    }
+    .kit{
+      margin-right: 30px;
+    }
+    .mani{
+      
+      margin-left: 85px;
+      
+    }
+    #one{
+      margin-left: 45px;
+    }    
+    </style>
+</head>
+<body  style="background-color: rgb(174, 174, 174);">
+<br>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>                        
+            </button>
+            <a class="navbar-brand" href="#">My Website</a>
+
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              
+     
+              <li class=""><a href="about">About</a></li>
+              
+              <li><a href="Heptities">Heptities</a></li>
+              <li><a href="contact">Contact Us</a></li></ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="welcome"><span class="glyphicon glyphicon-log-in"></span>LogOut</a></li> 
+            </ul>
+           
+                   
+            </li>
+          
+          </div>
+        </div>
+      </nav>
+
+      <form method="post" >
+        {% csrf_token %}
+        <center >
+          <h1 style="text-shadow: 2px 2px;"><b><font color="black">Hepatitis Disease Prediction</font></b></h1></style>
+        <br>
+        <br>
+          <div class="one">
+           
+            
+         <h6 id="one"><font color="black" size="3px">Age:</font><input type="text" class="mani"  name="Age" placeholder=""><br></h6>
+        <br>
+        
+        <h6 id="one"><font color="black" size="3px">Sex:</font><input type="text" class="mani"  name="sex" placeholder=""><br></h6>
+        <br>
+        <h6>
+        <font color="black" size="3px">Aluminium diboride:</font><input type="text"  name="ALB" placeholder=""><br></h6>
+        <br>
+        <h6><font color="black" size="3px"> Aluminium phosphide:</font><input type="text"  name="ALP" placeholder=""><br></h6>
+        <h6>
+        <br>
+      <font color="black" size="3px">Alanine transaminase:</font><input type="text"  name="ALT" placeholder=""><br></h6>
+      <h6>
+        <br>
+      <font color="black" size="3px">Bilirubin:</font><input type="text" class="three"  name="BIL" placeholder=""><br></h6>
+      <h6>
+        <br>
+       <font color="black" size="3px">Aspartate Aminotransferase:</font><input type="text" class="kit"  name="AST" placeholder=""><br></h6>
+       <h6>
+        <br>
+      <font color="black" size="3px">Methylidyne:</font><input type="text" class="three"  name="CHE" placeholder=""><br></h6>
+      <h6>
+        <br>
+      <font color="black" size="3px">Cholesterol:</font><input type="text" class="three"  name="CHOL" placeholder=""><br></h6>
+      <h6>
+        <br>
+      <font color="black" size="3px">Creatinine:</font><input type="text" class="three"  name="CREA" placeholder=""><br></h6>
+      <h6>
+        <br>
+     <font color="black" size="3px">Gamma-glutamyltransferase:</font><input type="text" class="kit" name="GGT" placeholder=""><br></h6>
+     <h6>
+        <br>
+      
+      <font color="black" size="3px">PROT:</font> <input type="text" class="three"  name="PROT" placeholder=""></h6>
+        <br>
+        <br>
+        <br>
+        <input type="submit" name="" value="PREDICT">
+      </div>
+    </center>
+      </form>
+      <br>
+      <br>
+     <br>
+      <div class="last">
+        <img src="https://extendthemes.com/wp-content/uploads/2018/05/copyright-min-1024x395.png" width="1260">
+    </div>
+    
+</body>
+</html>

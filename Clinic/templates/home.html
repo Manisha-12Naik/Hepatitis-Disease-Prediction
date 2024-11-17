@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+    .jumbotron {
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKLZAi9scoEI7CITboSIUSdo-D2sHFY6hCaw&s);
+        height: 300px;
+    }
+    .navbar {
+        margin-bottom: 0px;
+    }
+    
+   </style>
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>                        
+            </button>
+            <a class="navbar-brand" href="#">My Website</a>
+
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span>Home</a></li>
+     
+              <li class=""><a href="about"><span class="glyphicon glyphicon-search"></span>About</a></li>
+          
+              {% if user.is_authenticated %}
+              <li><a href="Heptities"><span class="glyphicon glyphicon-th-list"></span>Heptities</a></li>
+              <li> <a href="welcome"><span class="glyphicon glyphicon-log-out"></span>Logout </a></li>
+              {% else %}
+              <li><a href="register"><span class="glyphicon glyphicon-book"></span>Register</a></li>
+              
+              
+              <li><a href="contact"><span class="glyphicon glyphicon-earphone"></span>Contact Us</a></li>
+              
+              
+
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+               
+              <li><a href="login"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>      
+            </li>
+            {% endif%}
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <br>
+    <div class="jumbotron text-center">
+        <div class="container-fluid " ></div>  
+            <h1><font color="white">Hepatitis Disease Prediction</font></h1>
+        </div>     
+    </div>
+<p ><b>Hepatitis is an inflammation of the liver. It may be caused by viral infection, alcohol consumption, several health conditions, or even some medications. Treatment varies based on the type and underlying cause.</p></b>
+<br><p>Hepatitis refers to an inflammatory condition of the liver. It is commonly the result of a viral infection, but there are other possible causes of hepatitis.
+
+    These include autoimmune hepatitis and hepatitis that occurs as a secondary result of medications, drugs, toxins, and alcohol. Autoimmune hepatitis is a disease that occurs when your body makes antibodies against your liver tissue.
+    
+    The five main viral classifications of hepatitis are hepatitis A, B, C, D, and E. A different virus is responsible for each type of viral hepatitis.
+    
+    The World Health Organization (WHO) estimates that 354 millionTrusted Source people currently live with chronic hepatitis B and C globally.</p>
+    <div class="container-fluid text-center">
+        <div class="row" id="gallery">
+            <div class="col-sm-3">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTe0pgEjoKcAgyscvrfC7yx18Z9vVaKDg-ugA&s" height="200" width="300">
+            </div>
+                <div class="col-sm-3">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSctGUYIfANvIHJqyXf8G7tZRK0dYGySGTcw&s" height="200" width="300">
+            </div>
+                <div class="col-sm-3">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdj6aNDiBxWlg_14uQdIRU1I72G7X6gZTjtw&s" height="200" width="300">
+            </div>
+                <div class="col-sm-3">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCWFGY1OxmjJ0QVmSUTA5TBfheMox-0VAQ9Q&s" height="200" width="300">
+            </div>
+        </div>
+<br>
+<p> <b><h2>What is hepatitis?</h2></b>
+    Hepatitis is inflammation of the liver. Inflammation is swelling that happens when tissues of the body are injured or infected. It can damage your liver. This swelling and damage can affect how well your liver functions.
+    
+    Hepatitis can be an acute (short-term) infection or a chronic (long-term) infection. Some types of hepatitis cause only acute infections. Other types can cause both acute and chronic infections.</p>
+    
+    <p><b><h2>What causes hepatitis?</h2></b>
+    There are different types of hepatitis, with different causes:
+    
+    Viral hepatitis is the most common type. It is caused by one of several viruses -- hepatitis viruses A, B, C, D, and E. In the United States, A, B, and C are the most common.
+    Alcoholic hepatitis is caused by heavy alcohol use
+    Toxic hepatitis can be caused by certain poisons, chemicals, medicines, or supplements
+    Autoimmune hepatitis is a chronic type in which your body's immune system attacks your liver. The cause is not known, but genetics and your environment may play a role.</p>
+   <p><b><h2> How is viral hepatitis spread?</h2></b>
+    Hepatitis A and hepatitis E usually spread through contact with food or water that was contaminated with an infected person's stool. You can also get hepatitis E by eating undercooked pork, deer, or shellfish.
+    
+    Hepatitis B, hepatitis C, and hepatitis D spread through contact with the blood of someone who has the disease. Hepatitis B and D may also spread through contact with other body fluids. This can happen in many ways, such as sharing drug needles or having unprotected sex.</p>
+    <br>
+        <div class="row">
+            <div class="col-sm-3">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZWoaGc0tNOKHY8JG2lwIu_QZQ4_8bbS5qow&s" height="200" width="300">
+            </div>
+                <div class="col-sm-3">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7qSaqlsw0ZvScKZYCG50Mf3EtU-fJpnC0ZA&s" height="200" width="300">
+            </div>
+                <div class="col-sm-3">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8zrMZ8Yn94OpofJDLxTOYzhZ17zci1fEblA&s" height="200" width="300">
+            </div>
+                <div class="col-sm-3">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRInnFbQ9jUwjUKc3qboGzJbEioLzcF5RH-NQ&s" height="200" width="300">
+            
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
